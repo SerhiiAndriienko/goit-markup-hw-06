@@ -56,29 +56,51 @@
                     </svg>
                 </button>
                 <h3>Leave your contacts and we will call you back</h3>
-                <form class="contact-form" name="contact-info" autocomplete="on" novalidate>
-                    <label for="user_name">Name</label>
-                    <input class="contact-input" type="name" name="user_name" id="user_name" autofocus>
+                <form class="contact-form" name="contact-info">
 
-                    <label for="user_tel">Phone</label>
-                    <input class="contact-input" type="tel" name="uzen-tel" id="user_tel">
+                    <label for="user-name">
+                        Name
+                    </label>
+                    <div class="modal-icons">
+                        <input  class="contact-input" type="text" name="user-name" id="user-name" autofocus>
+                        <span><svg class="icon-svg">
+                                <use href="./images/svg/icons.svg#icon-contact"></use>
+                            </svg></span>
+                    </div>
 
-                    <label for="user_email">Email</label>
-                    <input class="contact-input" type="email" name="email" id="user_email">
+                    <label for="user-tel">Phone</label>
+                    <div class="modal-icons">
+                        <input class="contact-input" type="tel" name="uzen-tel" id="user-tel">
+                        <span><svg class="icon-svg">
+                                <use href="./images/svg/icons.svg#icon-phone"></use>
+                            </svg></span>
+                    </div>
+                    <label for="user-email">Email</label>
+                    <div class="modal-icons">
+                        <input class="contact-input" type="email" name="email" id="user-email">
+                        <span><svg class="icon-svg">
+                                <use href="./images/svg/icons.svg#icon-mail"></use>
+                            </svg></span>
+                    </div>
 
-                    <label name="comment" id="user_comment">
+                    <label for="user-comment">
                         Comment
                     </label>
-                    <textarea name="comment" rows="8" placeholder="Text input" id="user_comment"></textarea>
-
-<div class="checkbox-flex" >
-                        <input class="checkbox-input" type="checkbox" name="policy" value="confirm" id="user_confirm" />
-                        <label  name="policy" id="user_confirm">
-                            I accept the terms and conditions of the <a href="#" class="privacy-policy">Privacy Policy</a>
+                    <textarea name="comment" rows="8" placeholder="Text input" id="user-comment"></textarea>
+                    <div class="checkbox-flex">
+                        <input class="checkbox-input"  type="checkbox" name="policy" value="confirm" id="user-confirm" />
+                        <label for="user-confirm">
+                            <span >
+                                <svg class="svg-click">
+                                <use href="./images/svg/icons.svg#icon-click"></use>
+                                </svg>
+                            </span>
+                            I accept the terms and conditions of the&nbsp<a href="#" class="privacy-policy">Privacy
+                                Policy</a>
                         </label>
-</div>
+                    </div>
 
-                <button class="submit-btn" type="submit"><span class="btn-text">Send</span></button>
+                    <button class="submit-btn" type="submit"><span class="btn-text">Send</span></button>
 
                 </form>
             </div>
@@ -161,7 +183,7 @@
                 <h2 class="our-team-title">Our Team</h2>
                 <ul class="our-team-list">
                     <li class="our-team-cards">
-                        <img class="our-team-img" width="264px" src="./images/main/mark.jpg" alt="man in shirt">
+                        <img class="our-team-img" width="264" src="./images/main/mark.jpg" alt="man in shirt">
                         <div class="our-team-name-position">
                             <h3 class="our-team-name">Mark Guerrero</h3>
                             <p class="our-team-position">Product Designer</p>
@@ -201,7 +223,7 @@
                     </li>
                     <li class="our-team-cards">
 
-                        <img class="our-team-img" width="264px" src="./images/main/tom.jpg" alt="smiled man in shirt">
+                        <img class="our-team-img" width="264" src="./images/main/tom.jpg" alt="smiled man in shirt">
                         <div class="our-team-name-position">
                             <h3 class="our-team-name">Tom Ford</h3>
                             <p class="our-team-position">Frontend Developer</p>
@@ -240,7 +262,7 @@
 
                     </li>
                     <li class="our-team-cards">
-                        <img class="our-team-img" width="264px" src="./images/main/camila.jpg"
+                        <img class="our-team-img" width="264" src="./images/main/camila.jpg"
                             alt="girl in pink blouse">
                         <div class="our-team-name-position">
                             <h3 class="our-team-name">Camila Garcia</h3>
@@ -278,7 +300,7 @@
                         </div>
                     </li>
                     <li class="our-team-cards">
-                        <img class="our-team-img" width="264px" src="./images/main/daniel.jpg"
+                        <img class="our-team-img" width="264" src="./images/main/daniel.jpg"
                             alt="smiled men in t-shirt">
                         <div class="our-team-name-position">
                             <h3 class="our-team-name">Daniel Wilson</h3>
@@ -365,9 +387,8 @@
     <footer>
         <div class="container footer-flex">
             <div>
-                <a class="logo-footer" href="#"><span class="web">Web</span><span
-                        class="studio-footer">studio</span></a>
-
+                <a class="logo-footer" href="#"><span class="web">Web</span><span class="studio-footer">studio</span></a>
+    
                 <p class="footer-info">Increase the flow of customers and sales for your business with digital marketing
                     &
                     growth solutions.
@@ -404,13 +425,28 @@
                     </li>
                 </ul>
             </div>
-
-
+            <form class="sub-form" name="subscribe">
+    
+                <label for="subscribe" class="sub-text">
+                    Subscribe
+                </label>
+                <div class="sub-decoration">
+                    <input autocomplete="off" type="email" id="subscribe" name="subscribe" placeholder="E-mail">
+                    <div class="sub-svg-decoration">
+                        <span>
+                            <svg class="sub-svg">
+                                <use href="./images/svg/icons.svg#icon-send">
+                                </use>
+                            </svg>
+                        </span>
+                        <button type="submit" class="sub-btn">
+                            Subscribe
+                        </button>
+                    </div>
+                </div>
+            </form>
         </div>
     </footer>
-
-
     <script src="./js/modal.js"></script>
 </body>
-
 </html>
