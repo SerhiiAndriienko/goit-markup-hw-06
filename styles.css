@@ -1,0 +1,30 @@
+body {
+  font-size: 20px;
+}
+/* 
+  ширина container 480  
+  або 3 рази по 160  
+*/
+.container {
+  width: 480px;
+  margin: auto;
+  padding-top: 15px;
+  background: burlywood;
+  font-size: 0;
+}
+
+/* 
+  ширина box x + 130 + x
+  або 160  
+*/
+.box {
+  width: 130px;
+  height: 75px;
+  line-height: 75px;
+  background-color: teal;
+  display: inline-block;
+  text-align: center;
+  color: #fff;
+  font-size: 1rem;
+    margin:0px 15px 15px 15px;
+}
