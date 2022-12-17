@@ -646,12 +646,15 @@ footer {
   border-radius: 4px;
   color: #ffffff;
   padding: 8px 64px 8px 24px;
+  cursor: pointer;
 }
 .sub-btn span {
   position: relative;
 }
 .sub-decoration {
   margin-top: 16px;
+  display: flex;
+  width: 456px;
 }
 .sub-decoration input {
   width: 259px;
@@ -710,13 +713,15 @@ footer {
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
   width: 408px;
-  height: 576px;
+  height: 579px;
   background-color: #fcfcfc;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 72px 24px 24px 24px;
+
 }
 
 .backdrop.is-hidden .modal {
@@ -729,15 +734,17 @@ footer {
 }
 .close-btn {
   position: absolute;
-  top: 40px;
-  right: 40px;
-
+  top: 24px;
+  right: 24px;
+cursor: pointer;
   height: 24px;
   width: 24px;
   background-color: #e7e9fc;
   border-radius: 50%;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
+                  display: flex;
+                justify-content: center;
+                align-items: center;
 }
 
 .close-btn:hover {
@@ -749,6 +756,8 @@ footer {
   width: 8px;
   height: 8px;
   fill: #000;
+
+
 }
 
 textarea {
@@ -766,7 +775,6 @@ textarea {
   display: flex;
   flex-direction: column;
 
-  margin: 16px 24px 0 24px;
   width: 360px;
 }
 
@@ -778,7 +786,6 @@ textarea {
   color: #2e2f42;
   text-align: center;
 
-  margin-top: 72px;
 }
 .contact-input {
   width: 100%;
@@ -787,6 +794,7 @@ textarea {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   padding: 8px 0 8px 16px;
+  background-color: transparent;
 }
 .contact-input {
   height: 40px;
@@ -807,19 +815,22 @@ textarea {
 .icon-svg {
   position: absolute;
 
-  width: 18px;
-  height: 18px;
+  width: 12px;
+  height: 12px;
   top: 50%;
   left: 16px;
   transform: translateY(-50%);
 }
-.contact-form>label {
+.field {
   margin-bottom: 4px;
   position: relative;
   margin-top: 8px;
 
 }
+.label-usen-name{
+  margin-top: 16px;
 
+}
 .contact-form label:last-child {
   margin-bottom: 0;
   height: 16px;
@@ -828,6 +839,8 @@ textarea {
 }
 .contact-form textarea {
   padding: 8px 0 0 16px;
+  background-color: transparent;
+
 }
 textarea:focus {
   outline: var(--iris);
@@ -879,6 +892,7 @@ background-origin: border-box;
   align-items: center;
   text-align: center;
   margin: 24px auto 0 auto;
+  cursor: pointer;
 
 }
 .btn-text {
